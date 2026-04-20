@@ -21,7 +21,7 @@
   print-color-adjust: exact;
 }
 
-/* CENTRALIZAÇÃO NA TELA */
+/* CENTRALIZAÇÃO */
 body {
   background: #f2f2f2;
   font-family: 'Open Sans', Arial, sans-serif;
@@ -180,9 +180,40 @@ body {
 }
 
 .qr-box img {
-  width: 200px;
-  height: 200px;
+  width: 170px;
+  height: 170px;
   margin-top: 10px;
+}
+
+/* BOTÃO */
+.btn-indicar {
+  display: inline-block;
+  background: #E8A020;
+  color: #0B1F3A;
+  border: none;
+  padding: 12px 18px;
+  font-weight: bold;
+  font-size: 13px;
+  border-radius: 8px;
+  margin-top: 12px;
+  text-decoration: none;
+}
+
+/* LINK ESCRITO */
+.link-texto {
+  font-size: 30px;
+  color: #A8C4E0;
+  margin-top: 10px;
+  word-break: break-word;
+}
+
+.link-texto a {
+  color: #E8A020;
+  text-decoration: none;
+}
+
+.link-texto a:hover {
+  text-decoration: underline;
 }
 
 .rodape {
@@ -264,10 +295,24 @@ body {
 </div>
 
 <div class="qr-section">
+
   <p class="card-titulo">ESCANEIE E INDIQUE AGORA</p>
+
   <div class="qr-box">
     <img src="indica.png" alt="QR Code">
   </div>
+
+  <a href="#" target="_blank" class="btn-indicar">
+    FAZER MINHA INDICAÇÃO
+  </a>
+
+  <p class="link-texto">
+    Ou acesse: 
+    <a href="https://forms.gle/W7Cwz4zmQG71kRxt8" target="_blank">
+      forms.gle/W7Cwz4zmQG71kRxt8
+    </a>
+  </p>
+
 </div>
 
 <div class="rodape">
@@ -282,4 +327,4 @@ body {
 </div>
 
 </body>
-</html>
+</html> 
