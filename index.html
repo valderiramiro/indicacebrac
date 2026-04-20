@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CEBRAC - Programa de Indicação</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
+/* CONFIGURAÇÃO PDF */
+@page {
+  size: A4;
+  margin: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+/* TAMANHO REAL A4 */
+.panfleto {
+  width: 210mm;
+  height: 297mm;
+  background: #0B1F3A;
+  position: relative;
+  overflow: hidden;
+}
+
+.barra-topo {
+  height: 6px;
+  background: #E8A020;
+}
+
+.conteudo {
+  padding: 28px 36px 36px;
+}
+
+/* Header */
+.header {
+  background: #112847;
+  border-radius: 10px;
+  padding: 18px 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.subtitulo-header {
+  font-size: 11px;
+  letter-spacing: 4px;
+  color: #E8A020;
+  margin-bottom: 6px;
+}
+
+.header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  color: #FFFFFF;
+}
+
+/* Texto */
+.slogan {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 13px;
+  color: #A8C4E0;
+  margin-bottom: 12px;
+}
+
+.divisor {
+  border-top: 1px dashed #E8A020;
+  margin: 0 60px 20px;
+}
+
+.chamada {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.chamada p {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.chamada span {
+  color: #E8A020;
+}
+
+/* Card */
+.card {
+  background: #112847;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 22px;
+}
+
+.card-titulo {
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: #E8A020;
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.item {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.bullet {
+  width: 8px;
+  height: 8px;
+  background: #E8A020;
+  margin-top: 6px;
+}
+
+.item p {
+  font-size: 13px;
+  color: #FFFFFF;
+}
+
+/* Passos */
+.titulo-secao {
+  text-align: center;
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: #E8A020;
+  margin-bottom: 18px;
+}
+
+.passo {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 14px;
+}
+
+.numero {
+  width: 44px;
+  height: 44px;
+  background: #E8A020;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #0B1F3A;
+}
+
+.passo-texto h3 {
+  font-size: 13px;
+  color: #FFFFFF;
+}
+
+.passo-texto p {
+  font-size: 12px;
+  color: #A8C4E0;
+}
+
+/* QR */
+.qr-section {
+  background: #112847;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.qr-box img {
+  width: 110px;
+  height: 110px;
+  margin-top: 10px;
+}
+
+/* Rodapé */
+.rodape {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.rodape hr {
+  border-top: 1px dashed #E8A020;
+  margin: 10px 60px;
+}
+
+.rodape p {
+  font-size: 10px;
+  color: #A8C4E0;
+}
+
+.barra-baixo {
+  height: 6px;
+  background: #E8A020;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="panfleto">
+
+<div class="barra-topo"></div>
+
+<div class="conteudo">
+
+<div class="header">
+  <p class="subtitulo-header">PROGRAMA DE INDICAÇÃO</p>
+  <h1>CEBRAC</h1>
+</div>
+
+<p class="slogan">Quem compartilha oportunidades, transforma vidas</p>
+<hr class="divisor">
+
+<div class="chamada">
+  <p>Conhece alguém que quer <br><span>crescer profissionalmente?</span></p>
+</div>
+
+<div class="card">
+  <p class="card-titulo">POR QUE INDICAR?</p>
+  <div class="item"><div class="bullet"></div><p>Ajude quem você conhece a se qualificar</p></div>
+  <div class="item"><div class="bullet"></div><p>Cursos reconhecidos pelo mercado de trabalho</p></div>
+  <div class="item"><div class="bullet"></div><p>Mais de 30 anos formando profissionais</p></div>
+</div>
+
+<p class="titulo-secao">COMO FUNCIONA?</p>
+
+<div class="passo">
+  <div class="numero">1</div>
+  <div class="passo-texto">
+    <h3>Faça sua indicação</h3>
+    <p>Informe o nome e contato</p>
+  </div>
+</div>
+
+<div class="passo">
+  <div class="numero">2</div>
+  <div class="passo-texto">
+    <h3>Aguarde o contato</h3>
+    <p>Nossa equipe falará com o indicado</p>
+  </div>
+</div>
+
+<div class="passo">
+  <div class="numero">3</div>
+  <div class="passo-texto">
+    <h3>Seu indicado começa!</h3>
+  </div>
+</div>
+
+<div class="qr-section">
+  <p class="card-titulo">ESCANEIE E INDIQUE AGORA</p>
+  <div class="qr-box">
+    <img src="indica.png" alt="QR Code">
+  </div>
+</div>
+
+<div class="rodape">
+  <hr>
+  <p>CEBRAC — Centro Brasileiro de Cursos</p>
+</div>
+
+</div>
+
+<div class="barra-baixo"></div>
+
+</div>
+
+</body>
+</html>
