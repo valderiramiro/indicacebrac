@@ -8,7 +8,6 @@
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
 
-/* CONFIGURAÇÃO PDF */
 @page {
   size: A4;
   margin: 0;
@@ -22,19 +21,25 @@
   print-color-adjust: exact;
 }
 
+/* CENTRALIZAÇÃO NA TELA */
 body {
-  margin: 0;
-  background: #ffffff;
+  background: #f2f2f2;
   font-family: 'Open Sans', Arial, sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
-/* TAMANHO REAL A4 */
+/* A4 */
 .panfleto {
   width: 210mm;
   height: 297mm;
   background: #0B1F3A;
   position: relative;
   overflow: hidden;
+  box-shadow: 0 0 25px rgba(0,0,0,0.25);
 }
 
 .barra-topo {
@@ -46,7 +51,6 @@ body {
   padding: 28px 36px 36px;
 }
 
-/* Header */
 .header {
   background: #112847;
   border-radius: 10px;
@@ -68,7 +72,6 @@ body {
   color: #FFFFFF;
 }
 
-/* Texto */
 .slogan {
   text-align: center;
   font-family: 'Playfair Display', serif;
@@ -99,7 +102,6 @@ body {
   color: #E8A020;
 }
 
-/* Card */
 .card {
   background: #112847;
   border-radius: 10px;
@@ -133,7 +135,6 @@ body {
   color: #FFFFFF;
 }
 
-/* Passos */
 .titulo-secao {
   text-align: center;
   font-size: 10px;
@@ -170,7 +171,6 @@ body {
   color: #A8C4E0;
 }
 
-/* QR */
 .qr-section {
   background: #112847;
   border-radius: 10px;
@@ -180,12 +180,11 @@ body {
 }
 
 .qr-box img {
-  width: 110px;
-  height: 110px;
+  width: 200px;
+  height: 200px;
   margin-top: 10px;
 }
 
-/* Rodapé */
 .rodape {
   text-align: center;
   margin-top: 20px;
@@ -208,7 +207,6 @@ body {
   bottom: 0;
   width: 100%;
 }
-
 </style>
 </head>
 
@@ -226,6 +224,7 @@ body {
 </div>
 
 <p class="slogan">Quem compartilha oportunidades, transforma vidas</p>
+
 <hr class="divisor">
 
 <div class="chamada">
@@ -235,7 +234,7 @@ body {
 <div class="card">
   <p class="card-titulo">POR QUE INDICAR?</p>
   <div class="item"><div class="bullet"></div><p>Ajude quem você conhece a se qualificar</p></div>
-  <div class="item"><div class="bullet"></div><p>Cursos reconhecidos pelo mercado de trabalho</p></div>
+  <div class="item"><div class="bullet"></div><p>Cursos reconhecidos pelo mercado</p></div>
   <div class="item"><div class="bullet"></div><p>Mais de 30 anos formando profissionais</p></div>
 </div>
 
@@ -245,14 +244,14 @@ body {
   <div class="numero">1</div>
   <div class="passo-texto">
     <h3>Faça sua indicação</h3>
-    <p>Informe o nome e contato</p>
+    <p>Informe nome e contato</p>
   </div>
 </div>
 
 <div class="passo">
   <div class="numero">2</div>
   <div class="passo-texto">
-    <h3>Aguarde o contato</h3>
+    <h3>Aguarde contato</h3>
     <p>Nossa equipe falará com o indicado</p>
   </div>
 </div>
